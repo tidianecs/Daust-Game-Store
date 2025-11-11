@@ -2,7 +2,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const divs = Array.from(document.querySelectorAll('.tile'));
     const playerDisplay = document.querySelector('.display-player');
     const resetButton = document.querySelector('#reset');
-    const announcer = document.querySelector('.announcer');
+    const announcer = document.querySelector('#announcer');
 
     let board = ['', '', '', '', '', '', '', '', ''];
     let currentPlayer = 'X';
@@ -57,7 +57,7 @@ window.addEventListener('DOMContentLoaded', () => {
             case TIE:
                 announcer.innerText = 'Tie';
         }
-        announcer.classList.remove('hide');
+        announcer.classList.remove('hidden');
     };
 
     const isValidAction = (div) => !(div.innerText === 'X' || div.innerText === 'O');
@@ -86,7 +86,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const resetBoard = () => {
         board = ['', '', '', '', '', '', '', '', ''];
         isGameActive = true;
-        announcer.classList.add('hide');
+        announcer.classList.add('hidden');
 
         if (currentPlayer === 'O') changePlayer();
 
