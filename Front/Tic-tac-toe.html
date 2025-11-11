@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="C:\Users\hp\Desktop\Daust\WebDev I\DaustGame\Back\Tic-tac-toe.js"></script>
+  </head>
+  <body class="bg-gray-900 text-white min-h-screen flex flex-col items-center justify-center gap-y-5">
+        <section class="title text-center mb-6">
+            <h1 class="text-4xl font-extrabold text-indigo-400 tracking-wide animate-pulse">Tic Tac Toe</h1>
+        </section>
+
+        <!-- Actual turn -->
+        <section class="display mb-6 text-lg font-semibold text-gray-300">
+            Player <span id="display-player" class="text-indigo-400 font-bold">X</span>'s turn
+        </section>
+
+        <section class="grid grid-cols-3 gap-4 max-w-[300px] mx-auto">
+            <div class="w-24 h-24 bg-gray-700 flex items-center justify-center text-5xl cursor-pointer"></div>
+            <div class="w-24 h-24 bg-gray-700 flex items-center justify-center text-5xl cursor-pointer"></div>
+            <div class="w-24 h-24 bg-gray-700 flex items-center justify-center text-5xl cursor-pointer"></div>
+            <div class="w-24 h-24 bg-gray-700 flex items-center justify-center text-5xl cursor-pointer"></div>
+            <div class="w-24 h-24 bg-gray-700 flex items-center justify-center text-5xl cursor-pointer"></div>
+            <div class="w-24 h-24 bg-gray-700 flex items-center justify-center text-5xl cursor-pointer"></div>
+            <div class="w-24 h-24 bg-gray-700 flex items-center justify-center text-5xl cursor-pointer"></div>
+            <div class="w-24 h-24 bg-gray-700 flex items-center justify-center text-5xl cursor-pointer"></div>
+            <div class="w-24 h-24 bg-gray-700 flex items-center justify-center text-5xl cursor-pointer"></div>
+        </section>
+
+
+        <!-- Ending message -->
+        <section id="announcer" class="text-2xl font-semibold text-green-400 hidden mb-6"></section>
+
+        <section class="controls flex gap-4">
+            <button id="reset" class="bg-indigo-600 hover:bg-indigo-700 px-5 py-2 rounded-lg font-medium transition">Reset</button>
+            <a href="Menu.html" class="bg-gray-700 hover:bg-gray-600 px-5 py-2 rounded-lg font-medium transition">Back</a>
+        </section>
+    </body>
+</html>
